@@ -1088,7 +1088,9 @@ footer {
     max-width: 100%;
     width: 100%;
 }
-
+.wrapperNeed .tab_content .tab_item {
+    padding: 40px 30px !important;
+}
 
 
 
