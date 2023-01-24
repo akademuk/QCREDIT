@@ -1084,6 +1084,10 @@ footer {
 .payOffSection1 {
     margin-bottom: 140px;
 }
+.logo a img {
+    max-width: 100%;
+    width: 100%;
+}
 
 
 
@@ -1494,6 +1498,14 @@ footer {
 @media (max-width: 576px) {
     .formContainer {
         flex-direction: column-reverse;
+    }
+    .openBurger img {
+        max-width: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    header {
+        height: 50px;
     }
     .credit_onlineContainerLeft {
         height: 100%;
