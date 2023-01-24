@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Qcredit</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+             <div class="logo">
+                 <a href="index.html">
+                     <img src="img/logo.png" alt="Qcredit">
+                 </a>
+             </div>
+             <ul class="headerNavigation">
+                 <li>
+                     <a href="index.html">Головна</a>
+                 </li>
+                 <li>
+                     <a href="#stock">Акції</a>
+                 </li>
+                 <li>
+                     <a href="#product">Наші продукти</a>
+                 </li>
+                 <li>
+                     <a href="#" class="bold">Як погасити</a>
+                 </li>
+                 <li>
+                     <a href="#help">Україна Help</a>
+                 </li>
+             </ul>
+             <div class="headerBtn">
+                 <button class="headerPay">Сплатити</button>
+                 <button class="headerExit">Вхід</button>
+             </div>
+             <div class="openBurger">
+                 <img src="img/burger.svg" alt="burger">
+             </div>
+        </div>
+    </header>
+    <!--header-->
+
+    <div class="menu">
+        <div class="close">
+            <svg width="34" height="22" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                    fill="#ffffff" />
+            </svg>
+        </div>
+        <ul class="headerNavigation menuNavigation">
+            <li>
+                <a href="#" class="bold">Головна</a>
+            </li>
+            <li>
+                <a href="#stock">Акції</a>
+            </li>
+            <li>
+                <a href="#product">Наші продукти</a>
+            </li>
+            <li>
+                <a href="#payOff">Як погасити</a>
+            </li>
+            <li>
+                <a href="#help">Україна Help</a>
+            </li>
+        </ul>
+        <div class="headerBtn menuBtn">
+            <button class="headerPay">Сплатити</button>
+            <button class="headerExit">Вхід</button>
+        </div>
+    </div>
+    <!--menu-->
+
+    <div class="topNavigation">
+        <div class="wrapper">
+            <a href="index.html">Головна</a>
+            <a href="#">/ Як погасити</a>
+        </div>
+    </div>
+    <!--Top Navigation-->
+
+    <div class="payOffBanner">
+        <div class="wrapper">
+            <div class="payOffBannerLeft">
+                <h1>Як погасити кредит?</h1>
+            </div>
+            <div class="payOffBannerRight">
+                <div class="credit_onlineContainerLeft" id="fields">
+                    <h2>Перший кредит під 0,01% в день</h2>
+                    <form class="rangeForm" id="ajax-contact-form">
+                        <div class="sliderMoney">
+                            <div class="sliderContainerText">
+                                <p>Виберiть сумму до 18 000 грн</p>
+                                    <div id="innerMoney">0</div>
+                            </div>
+                            <input type="range" id="valueMoney" min="0" max="18000" value="0" step="100" oninput="rangeMoney()">
+                        </div>
+                        <div class="sliderDate">
+                            <div class="sliderContainerText">
+                                <p>Виберить термiн</p>
+                                <div id="innerDate">0</div>
+                            </div>
+                            <input type="range" id="valueDate" min="0" max="30" value="0" oninput="rangeMoney()">
+                        </div>
+                        <div class="formContainer">
+                            <div class="formContainerLeft">
+                                <div class="calcResultProcent1">
+                                    <div class="calcResultCont">
+                                        <p>Вiдсотки</p>
+                                        <p id="resultPercent"></p>
+                                    </div>
+                                    <div class="calcResultCont">
+                                        <p>Сумма до повернення:</p>
+                                        <p id="resultSum" class="boldResult">0</p>
+                                    </div>
+                                </div>
+                                <div class="calcResultProcent">
+                                    <p>Дата оплати:</p>
+                                    <p id="resultDate"></p>
+                                </div>
+                            </div>
+                            <div class="formContainerRight">
+                                <input type="submit" value="Отримати гроші" class="formBtn">
+                                <button class="promocod"><span>Маю промокод</span><span>Є промокод?</span></button> 
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Pay Off Banner-->
+
+    <div class="payOffSection1">
+        <div class="wrapper">
+            <div class="payOffSection1Left">
+                <h2>Через Особистий кабінет</h2>
+                <ul>
+                    <li>Увійдіть в Особистий кабінет та оберіть розділ «Погашення»</li>
+                    <li>Визначте банківську картку, з якої плануєте здійснювати оплату. Якщо це не та сама картка, на яку ви отримали кредит, натисніть «Сплатити іншою карткою» та «Далі».</li>
+                    <li>Оберіть суму, яку бажаєте перевести та натисніть «сплатити». Гроші, які ви вказали, будуть списані з обраної вами банківської картки.</li>
+                    <li>Після проведення платежу ви отримаєте смс із сумою оплати.</li>
+                </ul>
+                <h2>У терміналі ПриватБанку</h2>
+                <ul>
+                    <li>Оберіть на сайті ПриватБанку найближчий до вас термінал самообслуговування.</li>
+                    <li>У меню пошуку на терміналі оберіть компанію «Qcredit».</li>
+                    <li>Введіть номер вашого кредитного договору.</li>
+                    <li>У полі «Сума до закриття» вкажіть суму платежу, який ви плануєте здійснити, натисніть «Далі».</li>
+                    <li>Після проведення платежу вам надійде смс, де буде вказано суму оплати.</li>
+                </ul>
+            </div>
+            <div class="payOffSection1Right">
+                <img src="img/payOffSection1.png" alt="Qcredit">
+            </div>
+        </div>
+    </div>
+    <!--Section 1-->
+
+    <div class="payOffSection1 paddingTop">
+        <div class="wrapper">
+            <div class="payOffSection1Right">
+                <img src="img/payOff2.png" alt="Qcredit">
+            </div>
+            <div class="payOffSection1Left marginLeft">
+                <h2>У терміналі IBox</h2>
+                <ul>
+                    <li>Знайдіть на карті IBox найближчий термінал.</li>
+                    <li>Перейдіть до категорії “Банки, кредити, страхування”, знайдіть та оберіть Qcredit. Ви також можете скористатись пошуком та ввести назву послуги у відповідному полі.</li>
+                    <li>Введіть номер договору та суму, яку Ви плануєте погасити.</li>
+                    <li>Перевірте вказані дані на екрані терміналу та здійсніть оплату.</li>
+                    <li>Після сплати ви можете роздрукувати чек або обрати зручний спосіб отримання чеку: повідомлення в Viber/ смс-повідомлення/листом на електронну пошту.</li>
+                    <li>Розмір комісії з платника при оплаті послуг складає 2 %, мінімум 5 грн від суми поповнення. Інформація про оплату надходить в компанію одразу після переказу.</li>
+                </ul>
+                <h2>На сайті IBox</h2>
+                <ul>
+                    <li>Оберіть на сайті IBox іконку «Платежі», а після «Погашення кредитів»</li>
+                    <li>Знайдіть та оберіть Qcredit. Ви також можете скористатись пошуком та ввести назву компанії у відповідному полі.</li>
+                    <li>Введіть номер договору та суму, яку Ви плануєте погасити.</li>
+                    <li>Перевірте вказану інформацію на екрані терміналу та внесіть дані своєї банківської картки. Після сплати ви можете зберегти чек на ваш пристрій, обравши кнопку «Завантажити».</li>
+                    <li>Розмір комісії з платника при оплаті послуг складає 2 %, мінімум 5 грн від суми поповнення. Інформація про оплату надходить в компанію одразу після переказу.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Section 2-->
+
+    <div class="payOffSection1">
+        <div class="wrapper">
+            <div class="payOffSection1Left">
+                <h2>У терміналі EasyPay</h2>
+                <ul>
+                    <li>На сайті EasyPay найдіть найближчий до вас термінал самообслуговування.</li>
+                    <li>У терміналі знайдіть розділ «Банки та страхування», після цього натисніть Qcredit</li>
+                    <li>Введіть номер договору на позику, за яким ви хочете здійснити платіж, а також суму до повернення. Натисніть кнопку «Сплатити».</li>
+                    <li>Після проведення платежу ви отримаєте смс із сумою оплати.</li>
+                    <p>Важливо! Сервіс може стягувати додаткову комісію за проведення платежу.</p>
+                </ul>
+                <h2>На сайті EasyPay</h2>
+                <ul>
+                    <li>Вкажіть номер кредитного договору та суму, яку ви збираєтесь внести.</li>
+                    <li>Введіть номер карти, з якої плануєте провести платіж, та натисніть «Сплатити».</li>
+                    <li>Після проведення платежу ви отримаєте смс з сумою оплати.</li>
+                    <p>Важливо! Сервіс може стягувати додаткову комісію за проведення платежу.</p>
+                </ul>
+            </div>
+            <div class="payOffSection1Right">
+                <img src="img/payOff3.png" alt="Qcredit">
+            </div>
+        </div>
+    </div>
+    <!--Section 3-->
+
+    <div class="payOffSection1 paddingTop margins">
+        <div class="wrapper">
+            <div class="payOffSection1Right">
+                <img src="img/payOff4.png" alt="Qcredit">
+            </div>
+            <div class="payOffSection1Left marginLeft">
+                <h2>У терміналі City24</h2>
+                <ul>
+                    <li>Знайдіть на сайті City24 найближчий термінал.</li>
+                    <li>Перейдіть до категорії "Банки та фінансові послуги", знайдіть та оберіть Qcredit.</li>
+                    <li>Введіть номер договору та суму платежу, яку Ви плануєте погасити, та натисніть кнопку "Далі".</li>
+                    <li>Після сплати буде відправлено смс-повідомлення на номер телефону Клієнта з підтвердженням платежу та внесеною сумою.</li>
+                    <li>Розмір комісії залежить від способу оплати. Якщо ви здійснюєте платіж з карт Visa, MasterCard або Простір, сервіс стягує комісію 2%. При оплаті карткою OTP Bank — 0,2%. Інформація про внесення коштів надходить одразу після оплати.</li>
+                </ul>
+                <h2>У касі банку</h2>
+                <ul>
+                    <li>Ви можете погасити ваш борг у будь-якому банку України.</li>
+                    <li>Для погашення заборгованості необхідно знати номер договору та реквізити компанії, вказані на офіційному сайті Qcredit.</li>
+                    <p>Важливо! Платіж за реквізитами може йти до трьох банківських днів.</p>
+                    <p>Наші реквізити:</p>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--Section 4-->
+
+    <footer>
+        <div class="wrappers">
+            <div class="footerTop">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logoFooter.png" alt="Qcredit">
+                    </a>
+                </div>
+                <ul class="headerNavigation navigationFooter">
+                    <li>
+                        <a href="#">Розкриття інформації</a>
+                    </li>
+                    <li>
+                        <a href="#stock">Акції</a>
+                    </li>
+                    <li>
+                        <a href="#product">Форма звернення споживачів</a>
+                    </li>
+                    <li>
+                        <a href="#payOff">Партнери</a>
+                    </li>
+                </ul>
+                <ul class="contacts">
+                    <li>
+                        <a href="tel:+380000000000">
+                            <img src="img/tel.svg" alt="Qcredit">
+                            +38 000 000 00 00
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:LISTING@QMALL.IO">
+                            <img src="img/mail.svg" alt="Qcredit">
+                            LISTING@QMALL.IO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/location.svg" alt="Qcredit">
+                            <span>Україна, 04053, місто Київ, провулок Бехтеровський 4А, офіс 1</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerCenter">
+            <div class="wrapper">
+                <div class="footerCenterLeft">
+                    <p>ТОВ "ФК "БІКСБІТ" отримало наступні ліцензії на підставі Рішення Комітету Національного банку України 
+                        від 12.11.2021 року №21/3534-пк: 1. надання послуг з фінансового лізингу; 2. надання послуг з факторингу; 
+                        3. надання коштів у позику, в тому числі і на умовах фінансового кредиту..
+                        0(800)000-000 з 09:00 до 20:00 щодня
+                        Процентна ставка Приклад розрахунку : при сумі кредиту в 1000 грн, відсотки за користування засобами складуть 19,9 грн в день, що приблизно складає 1,99% в день. APR - 726,35%.</p>
+                </div>
+                <div class="footerCenterRight">
+                    <p>З переліком усіх кредитних продуктів ТОВ "ФК "БІКСБІТ" і з повною інформацією щодо умов їх надання можна ознайомитися в документах Тарифи ТОВ "ФК "БІКСБІТ" і Паспорт споживчого кредиту.
+                        З переліком послуг з лізингу і факторингу ТОВ "ФК "БІКСБІТ" і з розгорнутими умовами по ним можна ознайомитися в документах Тарифи до правил про порядок надання послуг фінансового лізингу та Тарифи 
+                        до правил про порядок надання послуг факторингу.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p> ©  2022 QCREDIT. Legal company</p>
+        </div>
+    </footer>
+    <!--footer-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/range-slider.js"></script>
+    <script src="script/burger.js"></script>
+</body>
+</html>

@@ -999,6 +999,91 @@ footer {
 .contacts li:nth-last-of-type(1) {
     margin-bottom: 0;
 }
+.topNavigation .wrapper {
+    display: flex;
+    padding-top: 140px;
+}
+.topNavigation .wrapper a {
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.topNavigation .wrapper a:nth-of-type(1) {
+    font-family: 'Gilroy-Semibold';
+    margin-right: 5px;
+}
+.payOffBanner {
+    padding-top: 85px;
+    padding-bottom: 105px;
+}
+.payOffBanner .wrapper {
+    display: flex;
+}
+.payOffBannerLeft h1 {
+    font-family: 'Nekst-SemiBold';
+    font-size: 56px;
+    line-height: 100%;
+    color: #FFFFFF;
+}
+.payOffBanner .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.payOffSection1 .wrapper {
+    display: flex;
+    align-items: center;
+}
+.payOffSection1Left h2{
+    font-family: 'Nekst-SemiBold';
+    font-size: 44px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 40px;
+}
+.payOffSection1Left {
+    margin-right: 30px;
+    width: 50%;
+}
+.payOffSection1Right {
+    width: 50%;
+}
+.payOffSection1Right img {
+    max-width: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.payOffSection1Left ul {
+    padding-left: 20px;
+}
+.payOffSection1Left ul li {
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    list-style: disc;
+}
+.payOffSection1Left ul:nth-of-type(1) {
+    margin-bottom: 80px;
+}
+.marginLeft {
+    margin-right: 0;
+    margin-left: 30px;
+}
+.paddingTop {
+    padding-top: 0;
+}
+.payOffSection1Left ul p {
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    font-family: 'Gilroy-Semibold';
+}
+.payOffSection1 {
+    margin-bottom: 140px;
+}
 
 
 
@@ -1108,6 +1193,23 @@ footer {
         max-width: 100%;
         padding: 0 16px;
         box-sizing: border-box;      
+    }
+    .payOffBanner .wrapper{
+        max-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;     
+    }
+    .topNavigation .wrapper {
+        padding: 140px 16px 0 16px;
+    }
+    .topNavigation .wrapper {
+        padding-top: 215px;
+        box-sizing: border-box;
+    }
+    .payOffSection1 .wrapper {
+        max-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;     
     }
 }
 @media (max-width: 1200px) {
@@ -1220,6 +1322,36 @@ footer {
     .contacts li {
         width: 30%;
     }
+    .payOffBanner .wrapper {
+        flex-direction: column;
+    }
+    .payOffBannerLeft h1{
+        margin-bottom: 30px;
+    }
+    .payOffSection1 .wrapper {
+        flex-direction: column-reverse;
+    }
+    .payOffSection1Left {
+        margin-right: 0;
+        width: 100%;
+    }
+    .payOffSection1Right {
+        margin-left: auto;
+    }
+    .payOffSection1 .wrapper {
+        flex-direction: column;
+    }
+    .paddingTop .wrapper{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .payOffSection1 {
+        margin-bottom: 30px;
+    }
+    .margins {
+        margin-bottom: 140px;
+    }
+    
 }
 
 
@@ -1233,6 +1365,9 @@ footer {
     }
     header .wrapper > .headerNavigation {
         display: none;
+    }
+    .topNavigation .wrapper {
+        padding-top: 140px;
     }
     header .wrapper {
         max-width: 100%;
@@ -1368,6 +1503,13 @@ footer {
     }
     .formBtn {
         width: 100% !important;
+    }
+    .payOffBanner {
+        padding-top: 30px;
+    }
+    .payOffBannerLeft h1 {
+        font-size: 36px;
+        line-height: 110%;
     }
     .whatIsNeeded {
         padding-top: 50px;
@@ -1531,6 +1673,26 @@ footer {
     }
     .touchTop img {
         max-width: 100%;
+    }
+    .payOffSection1Left h2 {
+        font-size: 30px;
+    }
+    .payOffSection1Right {
+        width: 100%;
+    }
+    .payOffSection1Right {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .payOffSection1Right img {
+        max-width: 75%;
+    }
+    .marginLeft {
+        margin-left: 0;
+    }
+    .payOffSection1 {
+        margin-bottom: 80px;
     }
 } 
 @media (max-width: 350px) {
