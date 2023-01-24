@@ -930,12 +930,12 @@ footer {
     align-items: flex-start;
     justify-content: space-between;
 }
-.headerNavigation {
+.navigationFooter {
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;  
 }
-.headerNavigation li {
+.navigationFooter li {
     width: 40%;
 }
 .contacts {
