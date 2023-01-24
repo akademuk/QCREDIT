@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/slick.css">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Qcredit</title>
+</head>
+<body>
+    <header>
+       <div class="wrapper">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Qcredit">
+                </a>
+            </div>
+            <ul class="headerNavigation">
+                <li>
+                    <a href="#" class="bold">Головна</a>
+                </li>
+                <li>
+                    <a href="#stock">Акції</a>
+                </li>
+                <li>
+                    <a href="#product">Наші продукти</a>
+                </li>
+                <li>
+                    <a href="#payOff">Як погасити</a>
+                </li>
+                <li>
+                    <a href="#help">Україна Help</a>
+                </li>
+            </ul>
+            <div class="headerBtn">
+                <button class="headerPay">Сплатити</button>
+                <button class="headerExit">Вхід</button>
+            </div>
+            <div class="openBurger">
+                <img src="img/burger.svg" alt="burger">
+            </div>
+       </div>
+    </header>
+    <!--header-->
+
+    <div class="menu">
+        <div class="close">
+            <svg width="34" height="22" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z"
+                    fill="#ffffff" />
+            </svg>
+        </div>
+        <ul class="headerNavigation menuNavigation">
+            <li>
+                <a href="#" class="bold">Головна</a>
+            </li>
+            <li>
+                <a href="#stock">Акції</a>
+            </li>
+            <li>
+                <a href="#product">Наші продукти</a>
+            </li>
+            <li>
+                <a href="#payOff">Як погасити</a>
+            </li>
+            <li>
+                <a href="#help">Україна Help</a>
+            </li>
+        </ul>
+        <div class="headerBtn menuBtn">
+            <button class="headerPay">Сплатити</button>
+            <button class="headerExit">Вхід</button>
+        </div>
+    </div>
+    <!--menu-->
+
+    <section class="credit_online">
+      <div class="wrapper">
+        <h1>Кредит онлайн на картку</h1>
+        <p>До 15 000 грн під 0,01% на день</p>
+        <div class="credit_onlineContainer">
+            <div class="credit_onlineContainerLeft" id="fields">
+                <h2>Перший кредит під 0,01% в день</h2>
+                <form class="rangeForm" id="ajax-contact-form">
+                    <div class="sliderMoney">
+                        <div class="sliderContainerText">
+                            <p>Виберiть сумму до 18 000 грн</p>
+                            <div id="innerMoney">0</div>
+                        </div>
+                        <input type="range" id="valueMoney" min="0" max="18000" value="0" step="100" oninput="rangeMoney()">
+                    </div>
+                    <div class="sliderDate">
+                        <div class="sliderContainerText">
+                            <p>Виберить термiн</p>
+                            <div id="innerDate">0</div>
+                        </div>
+                        <input type="range" id="valueDate" min="0" max="30" value="0" oninput="rangeMoney()">
+                    </div>
+                    <div class="formContainer">
+                        <div class="formContainerLeft">
+                            <div class="calcResultProcent1">
+                                <div class="calcResultCont">
+                                    <p>Вiдсотки</p>
+                                    <p id="resultPercent"></p>
+                                </div>
+                                <div class="calcResultCont">
+                                    <p>Сумма до повернення:</p>
+                                    <p id="resultSum" class="boldResult">0</p>
+                                </div>
+                            </div>
+                            <div class="calcResultProcent">
+                                <p>Дата оплати:</p>
+                                <p id="resultDate"></p>
+                            </div>
+                        </div>
+                        <div class="formContainerRight">
+                            <input type="submit" value="Отримати гроші" class="formBtn">
+                            <button class="promocod"><span>Маю промокод</span><span>Є промокод?</span></button> 
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="credit_onlineContainerRight">
+                <img src="img/creditOnline.png" alt="Qcredit" class="bannerDesctop">
+                <img src="img/bannerMobile.png" alt="Qcredit" class="bannerMobile">
+            </div>
+        </div>
+      </div>
+    </section>
+    <!--credit_online-->
+
+    <section class="weOffer">
+        <div class="wrapper">
+            <div class="weOfferTop">
+                <h2>Ми пропонуємо</h2>
+                <button class="creditBtn creditBtnDesctop">Оформити кредит
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.3 11.275C9.1 11.075 9.004 10.8333 9.012 10.55C9.02067 10.2667 9.125 10.025 9.325 9.82499L12.15 6.99999H1C0.716667 6.99999 0.479 6.90399 0.287 6.71199C0.0956668 6.52065 0 6.28332 0 5.99999C0 5.71665 0.0956668 5.47899 0.287 5.28699C0.479 5.09565 0.716667 4.99999 1 4.99999H12.15L9.3 2.14999C9.1 1.94999 9 1.71232 9 1.43699C9 1.16232 9.1 0.924987 9.3 0.724988C9.5 0.524988 9.73767 0.424988 10.013 0.424988C10.2877 0.424988 10.525 0.524988 10.725 0.724988L15.3 5.29999C15.4 5.39999 15.471 5.50832 15.513 5.62499C15.5543 5.74165 15.575 5.86665 15.575 5.99999C15.575 6.13332 15.5543 6.25832 15.513 6.37499C15.471 6.49165 15.4 6.59999 15.3 6.69999L10.7 11.3C10.5167 11.4833 10.2877 11.575 10.013 11.575C9.73767 11.575 9.5 11.475 9.3 11.275Z" fill="#D9552A"/>
+                    </svg>  
+                </button>
+            </div>
+            <div class="weOfferContent">
+                <div class="weOfferContentItem">
+                    <img src="img/we_offer_icon1.svg" alt="Qcredit">
+                    <p>Позики на будь-які цілі та потреби.</p>
+                </div>
+                <div class="weOfferContentItem">
+                    <div class="weOfferContentItemText">
+                        <img src="img/we_offer_icon2.svg" alt="Qcredit">
+                        <p>Оформлення кредиту без застави та поручителів.</p>
+                    </div>
+                    <p>*лише за наявності паспорта та ІПН (індивідуального податкового номера), не виходячи з дому</p>
+                </div>
+                <div class="weOfferContentItem">
+                    <img src="img/we_offer_icon3.svg" alt="Qcredit">
+                    <p>Відсутність прихованих комісій, платежів, страховок.</p>
+                </div>
+                <button class="creditBtn creditBtnMobile">Оформити кредит
+                    <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.3 11.275C9.1 11.075 9.004 10.8333 9.012 10.55C9.02067 10.2667 9.125 10.025 9.325 9.82499L12.15 6.99999H1C0.716667 6.99999 0.479 6.90399 0.287 6.71199C0.0956668 6.52065 0 6.28332 0 5.99999C0 5.71665 0.0956668 5.47899 0.287 5.28699C0.479 5.09565 0.716667 4.99999 1 4.99999H12.15L9.3 2.14999C9.1 1.94999 9 1.71232 9 1.43699C9 1.16232 9.1 0.924987 9.3 0.724988C9.5 0.524988 9.73767 0.424988 10.013 0.424988C10.2877 0.424988 10.525 0.524988 10.725 0.724988L15.3 5.29999C15.4 5.39999 15.471 5.50832 15.513 5.62499C15.5543 5.74165 15.575 5.86665 15.575 5.99999C15.575 6.13332 15.5543 6.25832 15.513 6.37499C15.471 6.49165 15.4 6.59999 15.3 6.69999L10.7 11.3C10.5167 11.4833 10.2877 11.575 10.013 11.575C9.73767 11.575 9.5 11.475 9.3 11.275Z" fill="#D9552A"/>
+                    </svg>  
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--weOffer-->
+
+    <section class="creditEasy">
+        <div class="wrapper">
+            <div class="creditEasyContainer">
+                <div class="creditEasyContainerLeft">
+                    <h2>Оформити кредит просто</h2>
+                    <ul>
+                        <li>
+                            <span>Заповніть заявку</span>
+                            Вкажіть у формі свої ім'я та прізвище, а також контактний номер.
+                        </li>
+                        <li>
+                            <span>Тримайте телефон поруч</span>
+                            Якщо ви звернулися до нас вперше, вам зателефонує представник компанії. Він може відповісти на ваші питання і допомогти з подальшим заповненням анкети.
+                        </li>
+                        <li>
+                            <span>Зачекайте кілька хвилин</span>
+                            Система має опрацювати інформацію. Рішення приймається до 5 хвилин.
+                        </li>
+                        <li>
+                            <span>Отримайте гроші</span>
+                            Кредит отримують 92 % українців, які звернулися за ним. Кошти на банківську карту надходять відразу після підписання договору.
+                        </li>
+                    </ul>
+                </div>
+                <div class="creditEasyContainerRight">
+                    <img src="img/creditEasy.png" alt="Qcredit">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--creditEasy-->
+
+    <section class="ourAdvantages">
+        <div class="wrapper">
+            <div class="creditEasyContainer flexAlight">
+                <div class="creditEasyContainerRight mar">
+                    <img src="img/ourAdvantages.png" alt="Qcredit">
+                </div>
+                <div class="creditEasyContainerLeft">
+                    <h2>Наші переваги</h2>
+                    <ul>
+                        <li class="like">
+                            <span>Прозоро</span>
+                            У нас немає прихованих платежів та комісій. Тільки чесна і зрозуміла ставка за день користування кредитними коштами.
+                        </li>
+                        <li class="like">
+                            <span>Швидко</span>
+                            Приймаємо рішення за 5 хвилин і перераховуємо гроші на вашу банківську карту відразу ж після підписання кредитного договору.
+                        </li>
+                        <li class="like">
+                            <span>Безпечно</span>
+                            Використовуємо передові технології для захисту ваших персональних даних і не передаємо їх третім особам.
+                        </li>
+                        <li class="like">
+                            <span>Доступно</span>
+                            Ми видаємо кредити непрацевлаштованим позичальникам, студентам, пенсіонерам та навіть клієнтам з неідеальною кредитною історією.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--ourAdvantages-->
+
+    <section class="whatIsNeeded">
+        <div class="wrapper">
+            <h2>Що потрібно для отримання кредиту?</h2>
+            <div class="whatIsNeededIcons">
+                <div class="whatIsNeededIconsSection">
+                    <img src="img/whatIsNeeded1.svg" alt="Qcredit">
+                    <p>Банківська карта</p>
+                </div>
+                <div class="whatIsNeededIconsSection">
+                    <img src="img/whatIsNeeded2.svg" alt="Qcredit">
+                    <p>Вік: від 18 років</p>
+                </div>
+                <div class="whatIsNeededIconsSection">
+                    <img src="img/whatIsNeeded3.svg" alt="Qcredit">
+                    <p>Паспорт та ІПН</p>
+                </div>
+            </div>
+            <div class="wrapperNeed">
+                <div class="tabs">
+                    <span class="tab">Як взяти?</span>
+                    <span class="tab">Як погасити?</span>     
+                </div>
+                <div class="tab_content">
+                    <div class="tab_item">
+                       <div class="tab_itemFlex">
+                            <div class="tab_itemSection">
+                                <img src="img/tab_item1.png" alt="Qcredit">
+                                <div class="tab_itemSectionText">
+                                    <span>Вкажіть суму і строк</span>
+                                    <p>Оберіть на головній сторінці сайту</p>
+                                </div>
+                            </div>
+                            <div class="tab_itemSection">
+                                <img src="img/tab_item2.png" alt="Qcredit">
+                                <div class="tab_itemSectionText">
+                                    <span>Заповніть заявку</span>
+                                    <p>Процес триває близько 8 хвилин за першого звернення і від 
+                                        2 хвилин — за повторних.</p>
+                                </div>
+                            </div>
+                            <div class="tab_itemSection">
+                                <img src="img/tab_item3.png" alt="Qcredit">
+                                <div class="tab_itemSectionText">
+                                    <span>Отримайте гроші</span>
+                                    <p>Після всіх процедур гроші будуть зараховані на вашу картку миттєво.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="tab_itemBtn">Оформити кредит</button>
+                    </div>
+                    <div class="tab_item">
+                        <div class="tab_itemFlex">
+                            <div class="tab_itemSection">
+                                <img src="img/tab_item4.png" alt="Qcredit">
+                                <div class="tab_itemSectionText">
+                                    <span>На нашому сайті</span>
+                                    <ul>
+                                        <li>через Особистий кабінет;</li>
+                                        <li>без авторизації на сайті.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab_itemSection">
+                                <img src="img/tab_item5.png" alt="Qcredit">
+                                <div class="tab_itemSectionText">
+                                    <span>Онлайн</span>
+                                    <ul>
+                                        <li>через сервіси онлайн-платежів;</li>
+                                        <li>в інтернет-банкінгу.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="tab_itemSection">
+                                <img src="img/tab_item6.png" alt="Qcredit">
+                                <div class="tab_itemSectionText">
+                                    <span>Офлайн</span>
+                                    <ul>
+                                        <li>у касах банків;</li>
+                                        <li>через термінали самообслуговування.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="tab_itemBtn">Оформити кредит</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--whatIsNeeded-->
+    
+    <section class="information">
+        <div class="wrapper">
+            <h2>Корисна інформація</h2>
+            <img src="img/information.png" alt="Qcredit">
+            <button>Всі активи</button>
+        </div>
+    </section>
+    <!--information-->
+
+    <section class="partner">
+        <div class="wrapper">
+            <h2>Наші партнери</h2>
+            <div class="partnerSlider">
+                <div class="partnerSliderItem">
+                    <img src="img/partner1.png" alt="Qcredit">
+                </div>
+                <div class="partnerSliderItem">
+                    <img src="img/partner2.png" alt="Qcredit">
+                </div>
+                <div class="partnerSliderItem">
+                    <img src="img/partner3.png" alt="Qcredit">
+                </div>
+                <div class="partnerSliderItem">
+                    <img src="img/partner1.png" alt="Qcredit">
+                </div>
+                <div class="partnerSliderItem">
+                    <img src="img/partner2.png" alt="Qcredit">
+                </div>
+                <div class="partnerSliderItem">
+                    <img src="img/partner3.png" alt="Qcredit">
+                </div>
+            </div>
+            <a href="#">Всі партнери</a>
+        </div>
+    </section>
+    <!--partner-->
+    
+    <section class="touch">
+        <div class="wrapper">
+            <div class="touchTop">
+                <img src="img/touch.png" alt="Qcredit">
+                <div class="touchFlex">
+                    <h2>Ми завжди на зв’язку</h2>
+                    <p>Допомагаємо, відповідаємо на питання користувачів 24/7</p>
+               </div>
+            </div>
+            <div class="touchContainer">
+                <a href="#">
+                    <img src="img/touch1.svg" alt="TELEGRAM">
+                    TELEGRAM
+                </a>
+                <a href="#">
+                    <img src="img/touch2.svg" alt="ONLINE-CHAT">
+                    ONLINE-CHAT
+                </a>
+                <a href="mailto:SUPPORT@QMALL.IO">
+                    <img src="img/touch3.svg" alt="SUPPORT@QMALL.IO">
+                    SUPPORT@QMALL.IO
+                </a>
+            </div>
+        </div>
+    </section>
+    <!--touch-->
+
+    <footer>
+        <div class="wrappers">
+            <div class="footerTop">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logoFooter.png" alt="Qcredit">
+                    </a>
+                </div>
+                <ul class="headerNavigation navigationFooter">
+                    <li>
+                        <a href="#">Розкриття інформації</a>
+                    </li>
+                    <li>
+                        <a href="#stock">Акції</a>
+                    </li>
+                    <li>
+                        <a href="#product">Форма звернення споживачів</a>
+                    </li>
+                    <li>
+                        <a href="#payOff">Партнери</a>
+                    </li>
+                </ul>
+                <ul class="contacts">
+                    <li>
+                        <a href="tel:+380000000000">
+                            <img src="img/tel.svg" alt="Qcredit">
+                            +38 000 000 00 00
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:LISTING@QMALL.IO">
+                            <img src="img/mail.svg" alt="Qcredit">
+                            LISTING@QMALL.IO
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/location.svg" alt="Qcredit">
+                            <span>Україна, 04053, місто Київ, провулок Бехтеровський 4А, офіс 1</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footerCenter">
+            <div class="wrapper">
+                <div class="footerCenterLeft">
+                    <p>ТОВ "ФК "БІКСБІТ" отримало наступні ліцензії на підставі Рішення Комітету Національного банку України 
+                        від 12.11.2021 року №21/3534-пк: 1. надання послуг з фінансового лізингу; 2. надання послуг з факторингу; 
+                        3. надання коштів у позику, в тому числі і на умовах фінансового кредиту..
+                        0(800)000-000 з 09:00 до 20:00 щодня
+                        Процентна ставка Приклад розрахунку : при сумі кредиту в 1000 грн, відсотки за користування засобами складуть 19,9 грн в день, що приблизно складає 1,99% в день. APR - 726,35%.</p>
+                </div>
+                <div class="footerCenterRight">
+                    <p>З переліком усіх кредитних продуктів ТОВ "ФК "БІКСБІТ" і з повною інформацією щодо умов їх надання можна ознайомитися в документах Тарифи ТОВ "ФК "БІКСБІТ" і Паспорт споживчого кредиту.
+                        З переліком послуг з лізингу і факторингу ТОВ "ФК "БІКСБІТ" і з розгорнутими умовами по ним можна ознайомитися в документах Тарифи до правил про порядок надання послуг фінансового лізингу та Тарифи 
+                        до правил про порядок надання послуг факторингу.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footerBottom">
+            <p> ©  2022 QCREDIT. Legal company</p>
+        </div>
+    </footer>
+    <!--footer-->
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script/slick.js"></script>
+    <script src="script/range-slider.js"></script>
+    <script src="script/burger.js"></script>
+    <script src="script/tabs.js"></script>
+    <script src="script/sliderPartner.js"></script>
+</body>
+</html>
