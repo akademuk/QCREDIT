@@ -100,6 +100,23 @@ header .wrapper {
     border-bottom: 1px solid transparent;
     transition: all 0.3s;
 }
+.navigationFooter li button {
+    background: transparent;
+    font-size: 16px;
+    line-height: 19px;
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 4px;
+    border-bottom: 1px solid transparent;
+    transition: all 0.3s;
+    border: none;
+    padding-left: 0;
+    width: max-content;
+}
+.navigationFooter li button:hover {
+    border-bottom: 1px solid #D9552A;
+    transition: all 0.3s;
+}
 .headerNavigation li:hover a {
     font-weight: 700;
     border-bottom: 1px solid #D9552A;
@@ -163,7 +180,7 @@ header .wrapper {
     padding: 190px 0 140px 0;
 }
 .credit_online .wrapper h1{
-    font-family: 'Nekst-Regular', sans-serif;
+    font-family: 'Nekst-SemiBold', sans-serif;
     font-size: 56px;
     line-height: 100%;
     text-align: center;
@@ -1107,16 +1124,110 @@ footer {
     opacity: 0.7;
     text-decoration: none
 }
-
-
-
-
-
-
-
-
-
-
+.helpBanner {
+    background: url(../img/help.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 650px;
+    position: relative;
+    top: -57px;
+    background-position: center top;
+}
+.helpBanner .wrapper {
+    max-width: 1290px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    height: 80%;
+}
+.helpContainer {
+    margin-top: -107px;
+}
+.helpBanner .wrapper h1 {
+    font-family: 'Nekst-SemiBold', sans-serif;
+    font-size: 56px;
+    line-height: 100%;
+    text-align: center;
+    color: #FFFFFF;
+    text-align: left;
+}
+.helpNavigation .wrapper {
+    padding-top: 140px;
+}
+.helpContainer {
+    position: relative;
+    z-index: 3;
+}
+.helpContainer .wrapper {
+    background: radial-gradient(circle at 100% 100%, #222332 0, #222332 14px, transparent 14px) 0% 0%/15px 15px no-repeat,
+    radial-gradient(circle at 0 100%, #222332 0, #222332 14px, transparent 14px) 100% 0%/15px 15px no-repeat,
+    radial-gradient(circle at 100% 0, #222332 0, #222332 14px, transparent 14px) 0% 100%/15px 15px no-repeat,
+    radial-gradient(circle at 0 0, #222332 0, #222332 14px, transparent 14px) 100% 100%/15px 15px no-repeat,
+    linear-gradient(#222332, #222332) 50% 50%/calc(100% - 2px) calc(100% - 30px) no-repeat,
+    linear-gradient(#222332, #222332) 50% 50%/calc(100% - 30px) calc(100% - 2px) no-repeat,
+    linear-gradient(90deg, #f9e407 0%, #0d7cfa 100%);
+    border-radius: 15px;
+    box-sizing: border-box;
+    padding: 53px 0;
+}
+.helpNavigation {
+    position: relative;
+    z-index: 3;
+}
+.helpContainerWrapper {
+    max-width: 1073px;
+    margin: 0 auto;
+    text-align: center;
+}
+.helpContainerWrapper h2 {
+    font-family: 'Nekst-SemiBold', sans-serif;
+    font-size: 44px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.helpContainerWrapper p {
+    font-family: 'Gilroy-Semibold';
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 26px;
+}
+.helpContainerWrapper form {
+    border: 1px solid #282A3D;
+    border-radius: 30px;
+    padding: 30px;
+    box-sizing: border-box;
+}
+.helpContainerWrapper form p {
+    text-align: left;
+    display: block;
+    font-size: 18px;
+    line-height: 160%;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+}
+.helpContainerWrapper form input {
+    background: #352830;
+    border-radius: 15px;
+    width: 100%;
+    height: 64px;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    border: none;
+    box-sizing: border-box;
+}
+.helpContainerWrapper form input::placeholder {
+    font-family: 'Gilroy-Regular';
+    font-size: 18px;
+    line-height: 160%;
+    color: #CD4C2C;
+}
 
 
 
@@ -1205,6 +1316,11 @@ footer {
         padding: 0 16px;
         box-sizing: border-box;  
     }
+    .helpContainer  {
+        max-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;  
+    }
     .footerTop {
         max-width: 100%;
         padding: 30px 16px;
@@ -1232,6 +1348,22 @@ footer {
         padding: 0 16px;
         box-sizing: border-box;     
     }
+    .helpBanner {
+        top: -57px;
+        height: 650px;
+    }
+    .helpBanner .wrapper {
+        max-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;   
+        height: 80%;  
+    }
+    .helpNavigation .wrapper {
+        padding-top: 140px;
+    }
+    .helpContainer {
+        margin-top: -107px;
+    }
 }
 @media (max-width: 1200px) {
     header .wrapper {
@@ -1253,6 +1385,13 @@ footer {
     .creditEasyContainer {
         flex-direction: column-reverse;
     }
+    .helpBanner {
+        top: -58px;
+        background-size: cover;
+    }
+    .helpBanner .wrapper {
+        height: 100%;
+    }
     .weOffer {
         padding-bottom: 50px;
     }
@@ -1264,6 +1403,17 @@ footer {
     }
     .mar img {
         max-width: 80%;
+    }
+    .topNavigation .wrapper {
+        padding-top: 215px;
+    }
+    .helpBanner {
+        height: 450px;
+    }
+    .helpContainer {
+        margin-top: -61px !important;
+        position: relative;
+        z-index: 2;
     }
 } 
 
@@ -1372,7 +1522,12 @@ footer {
     .margins {
         margin-bottom: 140px;
     }
-    
+    .helpBanner {
+        height: 350px;
+    }
+    .helpContainer {
+        margin-top: -58px;
+    }
 }
 
 
@@ -1386,6 +1541,13 @@ footer {
     }
     header .wrapper > .headerNavigation {
         display: none;
+    }
+    .helpBanner .wrapper h1 {
+        font-size: 30px;
+        line-height: 100%;
+    }
+    .helpBanner .wrapper {
+        height: 100%;
     }
     .topNavigation .wrapper {
         padding-top: 140px;
@@ -1511,6 +1673,16 @@ footer {
     .creditEasyContainerLeft ul {
         margin-right: 0;
     }
+    .helpNavigation .wrapper {
+        padding-top: 115px;
+    }
+    .helpBanner {
+        top: -34px;
+        height: 300px;
+    }
+    .helpContainer {
+        margin-top: -34px;
+    }
 }
 @media (max-width: 576px) {
     .formContainer {
@@ -1521,8 +1693,36 @@ footer {
         width: 100%;
         object-fit: cover;
     }
+    .helpContainerWrapper form input {
+        padding-left: 10px;
+    }
+    .navigationFooter li button {
+        width: auto;
+        text-align: left;
+    }
+    .helpContainerWrapper form input::placeholder {
+        font-size: 14px;
+    }
     header {
         height: 50px;
+    }
+    .helpContainerWrapper h2 {
+        font-size: 20px;
+        line-height: 140%;
+    }
+    .helpContainerWrapper form p {
+        font-size: 16px;
+        margin-bottom: 10px;
+    }
+    .helpContainerWrapper p {
+        display: none;
+    }
+    .helpContainer .wrapper {
+        padding: 30px 16px;
+    }
+    .helpBanner .wrapper h1 {
+        width: 35%;
+        line-height: 150%;
     }
     .credit_onlineContainerLeft {
         height: 100%;
@@ -1533,8 +1733,14 @@ footer {
     .formBtn {
         width: 100% !important;
     }
+    .helpNavigation .wrapper{
+        padding-top: 123px;
+    }
     .payOffBanner {
         padding-top: 30px;
+    }
+    .weOffer {
+        padding-bottom: 0;
     }
     .payOffBannerLeft h1 {
         font-size: 36px;
@@ -1722,6 +1928,18 @@ footer {
     }
     .payOffSection1 {
         margin-bottom: 80px;
+    }
+    .helpBanner {
+        height: 190px;
+    }
+    .helpBanner {
+        top: -58px;
+    }
+    .helpBanner .wrapper {
+        height: 125%;
+    }
+    .helpContainer {
+        margin-top: -58px;
     }
 } 
 @media (max-width: 350px) {
