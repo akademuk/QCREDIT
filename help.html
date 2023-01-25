@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Qcredit</title>
 </head>
-<body>
+<body class="body">
     <header>
         <div class="wrapper">
              <div class="logo">
@@ -172,7 +172,44 @@
     </footer>
     <!--footer-->
 
+    <div class="popup__bg"> 
+        <div class="popup">
+            <div class="popupScroll">
+                <svg class="close-popup" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#222222"/>
+                </svg>    
+               <p>Форма звернення споживача</p>
+               <form action="" class="formPopap">
+                    <input type="text" placeholder="Ім’я">
+                    <input type="text" placeholder="Прізвище">
+                    <input type="email" placeholder="E-mail">
+                    <div class="formPopapTel">
+                        <input type="tel" id="phone" placeholder="(+380)_ _   _ _ _   _ _  _ _">
+                    </div>
+                    <select>
+                        <option value="1">Тема</option>
+                        <option value="2">Пропозиція</option>
+                        <option value="3">Повідомлення</option>
+                        <option value="4">Скарга</option>
+                        <option value="5">Подяка</option>
+                        <option value="6">Інше</option>
+                    </select>
+                    <textarea cols="30" rows="10" placeholder="Ваш запит..."></textarea>
+                    <input type="submit" class="formPopapSubmit close-popup" value="Відправити">
+               </form>
+            </div>
+        </div>
+    </div>  
+    <!--Popap form-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <script src="script/burger.js"></script>
+    <script src="script/popup.js"></script>
+    <script>
+        $(function(){
+            $("#phone").mask("(+380)99 999-99-99");
+            });
+    </script>
 </body>
 </html>

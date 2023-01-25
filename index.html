@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style/style.css">
     <title>Qcredit</title>
 </head>
-<body>
+<body class="body">
     <header>
        <div class="wrapper">
             <div class="logo">
@@ -456,14 +456,30 @@
 
     <div class="popup__bg"> 
         <div class="popup">
-            <svg class="close-popup" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="#2982ff" d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
-           <p>Форма звернення споживача</p>
-           <form action="" class="formPopap">
-                <input type="text" placeholder="Ім’я">
-                <input type="text" placeholder="Прізвище">
-                <input type="email" placeholder="E-mail">
-                <input type="tel" id="phone" placeholder="(+380)_ _   _ _ _   _ _  _ _">
-           </form>
+            <div class="popupScroll">
+                <svg class="close-popup" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#222222"/>
+                </svg>    
+               <p>Форма звернення споживача</p>
+               <form action="" class="formPopap">
+                    <input type="text" placeholder="Ім’я" required>
+                    <input type="text" placeholder="Прізвище" required>
+                    <input type="email" placeholder="E-mail" required>
+                    <div class="formPopapTel">
+                        <input type="tel" id="phone" placeholder="(+380)_ _   _ _ _   _ _  _ _" required>
+                    </div>
+                    <select>
+                        <option value="1">Тема</option>
+                        <option value="2">Пропозиція</option>
+                        <option value="3">Повідомлення</option>
+                        <option value="4">Скарга</option>
+                        <option value="5">Подяка</option>
+                        <option value="6">Інше</option>
+                    </select>
+                    <textarea cols="30" rows="10" placeholder="Ваш запит..."></textarea>
+                    <input type="submit" class="formPopapSubmit close-popup" value="Відправити">
+               </form>
+            </div>
         </div>
     </div>  
     <!--Popap form-->
