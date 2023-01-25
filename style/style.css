@@ -2059,6 +2059,9 @@ footer {
     .inforationPageTabs {
         display: none;
     }
+    .inforationItem ul {
+        padding-left: 10px !important;
+    }
     .inforationPage .wrapper h1 {
         font-size: 30px;
     }
@@ -2069,6 +2072,14 @@ footer {
     }
     .popup {
         width: 90%;
+    }
+    .allTable table th {
+        padding: 10px !important;
+        font-size: 12px;
+    }
+    .allTable h3 {
+        font-size: 16px;
+        line-height: 100%;
     }
     .helpContainerWrapper form input {
         padding-left: 10px;
