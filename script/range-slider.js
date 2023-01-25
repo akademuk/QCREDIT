@@ -8,11 +8,11 @@ const valuePercent = 0.0001;
 
 function rangeMoney(){
     rangePercent = (valueMoney.value / valueMoney.max)*100;
-    valueMoney.style.background = `linear-gradient(to right, #D9552A ${rangePercent}%, #C6BAFB ${rangePercent}%)`;
+    valueMoney.style.background = `linear-gradient(to right, #D9552A ${rangePercent}%, #DDDDDD ${rangePercent}%)`;
     innerMoney.textContent = valueMoney.value;
 
     rangeDate = (valueDate.value / valueDate.max)*100;
-    valueDate.style.background = `linear-gradient(to right, #D9552A ${rangeDate}%, #C6BAFB ${rangeDate}%)`;
+    valueDate.style.background = `linear-gradient(to right, #D9552A ${rangeDate}%, #DDDDDD ${rangeDate}%)`;
     innerDate.textContent = valueDate.value;
 
     letDate = (Number(valueDate.value) * Number(valuePercent));

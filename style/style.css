@@ -357,7 +357,7 @@ input[type="range"]{
     display: block;
     width: 100%;
     height: 6px;
-    background: rgba(86, 86, 86, 0.2);
+    background:#DDDDDD;
     outline: none;
 
 }
@@ -1825,7 +1825,15 @@ footer {
     line-height: 160%;
     color: #141414;
 }
-
+.like::after {
+    content: " " !important;
+    background: url(../img/like.svg),#D9552A !important;
+    background-size: auto !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    width: 40px;
+    height: 40px;
+}
 
 
 
@@ -2323,6 +2331,7 @@ footer {
     }
     .creditBtnMobile {
         display: block;
+        margin: 0 auto;
     }
     .weOfferContentItem {
         align-items: center;
@@ -2335,6 +2344,7 @@ footer {
     }
     .weOfferContentItem > p {
         font-size: 18px;
+        margin-top: 10px;
         line-height: 100%;
     }
     .weOfferContentItemText > p {
@@ -2390,6 +2400,13 @@ footer {
     }
     .wrapperNeed .tab_content .tab_item {
         padding: 30px 16px !important;
+    }
+    .tab_itemSection img {
+        width: 35px !important;
+        height: 35px !important;
+    }
+    .tab_itemSectionText p {
+        font-size: 16px;
     }
     .partnerWrapper {
         padding-bottom: 34px;
