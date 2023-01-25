@@ -62,6 +62,9 @@ body {
 .body.active {
     overflow: hidden;
 }
+* {
+    outline: none !important;
+}
 header {
     width: 100%;
     max-width: 100%;
@@ -1792,9 +1795,36 @@ footer {
 .promotionsImgMobile {
     display: none;
 }
-
-
-
+.partnerPage .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.partnerPageSection {
+    width: 32%;
+    background: #FFFFFF;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 30px 25px;
+    text-align: center;
+    min-height: 270px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+.partnerPageSection img {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    width: 80%;
+    height: 80px;
+    object-fit: contain;
+}
+.partnerPageSection p {
+    font-size: 16px;
+    line-height: 160%;
+    color: #141414;
+}
 
 
 
@@ -1869,6 +1899,11 @@ footer {
         box-sizing: border-box;
     }
     .creditEasy .wrapper {
+        max-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+    .partnerPage .wrapper {
         max-width: 100%;
         padding: 0 16px;
         box-sizing: border-box;
@@ -2040,6 +2075,9 @@ footer {
     .weOfferContentItem:nth-of-type(2) > p {
         font-size: 12px;
     }
+    .partnerPageSection {
+        padding: 16px;
+    }
     .weOfferContentItem img {
         width: 30px;
     }
@@ -2158,6 +2196,9 @@ footer {
     }
     header .wrapper > .headerBtn {
         display: none;
+    }
+    .partnerPageSection {
+        min-height: 350px;
     }
     header .wrapper > .headerNavigation {
         display: none;
@@ -2329,16 +2370,38 @@ footer {
         padding: 30px 16px;
         box-sizing: border-box;
     }
+    .partnerPageSection {
+        width: 48%;
+    }
 }
 @media (max-width: 576px) {
     .formContainer {
         flex-direction: column-reverse;
+    }
+    .partnerWrapper .wrapper .payOffBannerLeft {
+        width: 100%;
+    }
+    .partnerWrapper .wrapper .payOffBannerLeft h1{
+        text-align: left;
+        width: 100%;
+    }
+    .partnerWrapper {
+        padding-bottom: 34px;
     }
     .promotionsImgMobile {
         display: block;
     }
     .promotionsSection {
         padding: 16px;
+    }
+    .displayNone {
+        display: none;
+    }
+    .partnerPageSection p {
+        font-size: 12px;
+    }
+    .partnerPageSection {
+        min-height: 300px;
     }
     .promotionsText p {
         font-size: 16px;
@@ -2680,5 +2743,14 @@ footer {
     }
     .promotionsText a {
         width: 100%;
+    }
+    .partnerPageSection {
+        width: 100%;
+    }
+    .partnerPageSection {
+        min-height: 100%;
+    }
+    .partnerPageSection img {
+        margin-bottom: 0;
     }
 }
