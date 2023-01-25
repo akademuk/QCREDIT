@@ -2385,6 +2385,12 @@ footer {
         text-align: left;
         width: 100%;
     }
+    .popup {
+        padding: 10px;
+    }
+    .wrapperNeed .tab_content .tab_item {
+        padding: 30px 16px !important;
+    }
     .partnerWrapper {
         padding-bottom: 34px;
     }
