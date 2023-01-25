@@ -2409,6 +2409,12 @@ footer {
         font-size: 20px;
         height: 50px;
     }
+    .logo a img {
+        width: 80%;
+    }
+    .logo {
+        margin-bottom: 0;
+    }
     .menuNavigation {
         width: 100% !important;
     }
@@ -2608,7 +2614,44 @@ footer {
         margin-bottom: 0;
     }
     .credit_onlineContainerLeft {
-        padding: 16px;
+        padding: 0;
+        padding-top: 30px;
+    }
+    .credit_onlineContainerLeft h2 {
+        display: none;
+    }
+    .formContainerLeft {
+        padding: 0 16px;
+        box-sizing: border-box;
+        padding-bottom: 30px;
+        background: rgba(86, 86, 86, 0.06);
+    }
+    .promocod {
+        background: rgba(86, 86, 86, 0.06);
+        width: 100% !important;
+        margin-bottom: 0;
+        padding-bottom: 12px;
+        border-bottom: 0;
+        padding-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .promocod span:nth-of-type(2) {
+        border-bottom: 1px dotted #353535;
+        width: max-content;
+    }
+    .formBtn {
+        width: 50% !important;
+        margin: 0 auto 10px auto;
+    }
+    .rangeForm {
+        margin-top: 0;
+    }
+    .sliderMoney {
+        padding: 0 16px;
+    }
+    .sliderDate {
+        padding: 0 16px;
     }
     .calcResultProcent {
         padding: 0;
