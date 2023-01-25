@@ -441,7 +441,8 @@ input[type="range"]:active::-webkit-slider-thumb{
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     z-index: 100;
 }
 .open_menu {
@@ -2390,6 +2391,26 @@ footer {
     }
     .partnerWrapper .wrapper .payOffBannerLeft {
         width: 100%;
+    }
+    .menuBtn button {
+        width: 100%;
+    }
+    .headerBtn {
+        width: 100%;
+    }
+    .menuNavigation li a {
+        font-size: 20px;
+    }
+    .menuBtn .headerPay {
+        font-size: 20px;
+        height: 50px;
+    }
+    .headerExit {
+        font-size: 20px;
+        height: 50px;
+    }
+    .menuNavigation {
+        width: 100% !important;
     }
     .partnerWrapper .wrapper .payOffBannerLeft h1{
         text-align: left;
