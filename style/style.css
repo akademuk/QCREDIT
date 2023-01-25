@@ -1719,12 +1719,78 @@ footer {
 .productPage {
     padding-bottom: 140px;
 }
-
-
-
-
-
-
+.promotions .wrapper h1 {
+    font-family: 'Nekst-SemiBold';
+    font-size: 56px;
+    line-height: 100%;
+    color:#FFFFFF;
+    margin: 40px 0;
+}
+.promotionsSection {
+    padding: 30px;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+.promotionsText {
+    margin-top: 30px;
+}
+.promotionsText span {
+    font-size: 16px;
+    line-height: 160%;
+    color: #A7A7A7;
+    margin-bottom: 10px;
+}
+.promotionsText h3 {
+    font-family: 'Nekst-SemiBold';
+    font-size: 40px;
+    line-height: 100%;
+    color: #141414;
+    margin-bottom: 10px;
+}
+.promotionsText p {
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+    margin-bottom: 20px;
+}
+.promotionsText a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    width: 270px;
+    height: 52px;
+    background: #D9552A;
+    border-radius: 30px;
+    font-family: 'Gilroy-Semibold';
+    font-size: 16px;
+    line-height: 160%;
+    color: #FFFFFF;
+    border: none;
+    text-decoration: none;
+    border: 1px solid transparent;
+    transition: all 0.3s;
+}
+.promotionsText a:hover {
+    transition: all 0.3s;
+    color: #D9552A;
+    background: transparent;
+    border: 1px solid #D9552A;
+}
+.promotionsSection {
+    margin-bottom: 30px;
+}
+.promotions {
+    padding-bottom: 40px;
+}
+.promotionsImg img {
+    max-width: 100%;
+    width: 100%;
+}
+.promotionsImgMobile {
+    display: none;
+}
 
 
 
@@ -1802,6 +1868,11 @@ footer {
         box-sizing: border-box;
     }
     .creditEasy .wrapper {
+        max-width: 100%;
+        padding: 0 16px;
+        box-sizing: border-box;
+    }
+    .promotions .wrapper {
         max-width: 100%;
         padding: 0 16px;
         box-sizing: border-box;
@@ -2258,6 +2329,28 @@ footer {
     .formContainer {
         flex-direction: column-reverse;
     }
+    .promotionsImgMobile {
+        display: block;
+    }
+    .promotionsSection {
+        padding: 16px;
+    }
+    .promotionsText p {
+        font-size: 16px;
+    }
+    .promotionsText h3 {
+        font-size: 26px;
+        line-height: 100%;
+    }
+    .topNavigation .wrapper {
+        padding-top: 100px;
+    }
+    .promotions .wrapper h1 {
+        font-size: 36px;
+    }
+    .promotionsImgDesctop {
+        display: none;
+    }
     .inforationAcardion {
         display: block;
     }
@@ -2550,6 +2643,9 @@ footer {
     .helpContainer {
         margin-top: -58px;
     }
+    .promotionsText {
+        margin-top: 20px;
+    }
 } 
 @media (max-width: 350px) {
     .partnerSliderItem {
@@ -2575,6 +2671,9 @@ footer {
         width: 100% !important;
     }
     .information .wrapper button {
+        width: 100%;
+    }
+    .promotionsText a {
         width: 100%;
     }
 }
