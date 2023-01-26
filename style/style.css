@@ -1465,7 +1465,6 @@ footer {
     border-bottom: 1px solid #343434;
     display: flex;
     align-items: center;
-    padding-bottom: 8px;
     width: max-content;
 }
 .inforationTab {
@@ -1477,6 +1476,10 @@ footer {
     color: #D9552A;
     margin-right: 30px;
     cursor: pointer;
+    padding-bottom: 30px;
+}
+.inforationTab.active {
+    border-bottom: 1px solid #D9552A;
 }
 .inforationTab:nth-last-of-type(1) {
     margin-right: 0;
@@ -1928,10 +1931,26 @@ footer {
 .btnMobile {
     display: none;
 }
-
-
-
-
+.newShortCreditTab {
+    border-radius: 0 20px 0 0;
+}
+.newShortCreditTab:nth-of-type(1) {
+    border-radius: 20px 0 0 0;
+}
+.longCreditTab  {
+    border-radius: 0 20px 0 0;
+}
+.longCreditTab:nth-of-type(1) {
+    border-radius: 20px 0 0 0;
+}
+.newShortCredit1 {
+    background: #C2CAF5 !important;
+    margin-top: -1px;
+}
+.newShortCredit {
+    background: #DFF5CD;
+    margin-top: -1px;
+}
 
 
 
@@ -2100,6 +2119,9 @@ footer {
     header {
         height: max-content;
         padding: 16px 0;
+    }
+    .inforationTab.active {
+        border-bottom: 1px solid transparent;
     }
     .logo {
         margin-bottom: 16px;
