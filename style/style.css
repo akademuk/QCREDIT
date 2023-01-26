@@ -1857,6 +1857,28 @@ footer {
 .promotions {
     padding-bottom: 40px;
 }
+.promotionsImg {
+    position: relative;
+}
+.promotionsImg p {
+    position: absolute;
+    top: 30px;
+    left: 10px;
+    font-size: 14px;
+    line-height: 160%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #141414;
+    padding: 6.5px 42px;
+    background: #84D93F;
+    border-radius: 10px;
+    font-family: 'Gilroy-Semibold';
+}
+.promotionsImg .red {
+    background: #DF1818;
+    border-radius: 10px;
+    color: #FFFFFF;
+}
 .promotionsImg img {
     max-width: 100%;
     width: 100%;
@@ -2288,6 +2310,10 @@ footer {
     header .wrapper > .headerNavigation {
         display: none;
     }
+    .promotionsImg p {
+        top: 13px;
+        left: 3px;
+    }
     .allTable h3 {
         font-size: 18px;
     }
@@ -2483,6 +2509,11 @@ footer {
     .partnerSliderItem {
         height: 66px;
         border-radius: 15px;
+    }
+    .promotionsImg p {
+        top: 22px;
+        left: 17px;
+        padding: 6.5px 12px;
     }
     .promotionsText a {
         margin: 0 auto;
