@@ -87,15 +87,27 @@
                 <form class="rangeForm" id="ajax-contact-form">
                     <div class="sliderMoney">
                         <div class="sliderContainerText">
-                            <p>Виберiть сумму до 18 000 грн</p>
-                            <div id="innerMoney">0</div>
+                            <div class="maxLenghtContent">
+                                <p>Сума позики</p>
+                                <div id="innerMoney">0</div>
+                            </div>
+                            <div class="maxLenght">
+                                <p>від 500,00 грн.</p>
+                                <p>до 15 000,00 грн.</p>
+                            </div>
                         </div>
-                        <input type="range" id="valueMoney" min="0" max="18000" value="0" step="100" oninput="rangeMoney()">
+                        <input type="range" id="valueMoney" min="500" max="18000" value="0" step="100" oninput="rangeMoney()">
                     </div>
                     <div class="sliderDate">
                         <div class="sliderContainerText">
-                            <p>Виберить термiн</p>
-                            <div id="innerDate">0</div>
+                            <div class="maxLenghtContent">
+                                <p>Срок платежу</p>
+                                <div id="innerDate">0</div>
+                            </div>
+                            <div class="maxLenght">
+                                <p>від 2 днів</p>
+                                <p>до 30 днів</p>
+                            </div>
                         </div>
                         <input type="range" id="valueDate" min="0" max="30" value="0" oninput="rangeMoney()">
                     </div>
@@ -319,7 +331,8 @@
                     </div>
                 </div>
             </div>
-        </div>
+            <a class="btnMobile">Оформити кредит</a>
+        </div>  
     </section>
     <!--whatIsNeeded-->
     

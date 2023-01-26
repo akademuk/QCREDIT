@@ -36,6 +36,24 @@
          font-style: normal;
 }
 @font-face {
+    font-family: 'Nekst-Black';
+    src: url('../fonts/Nekst-Black.eot') format('opentype'), 
+         url('../fonts/Nekst-Black.woff2') format('woff2'), 
+         url('../fonts/Nekst-Black.woff') format('woff'), 
+         url('../fonts/Nekst-Black.ttf')  format('truetype');
+         font-weight: 800;
+         font-style: normal;
+}
+@font-face {
+    font-family: 'Nekst-Bold';
+    src: url('../fonts/Nekst-Bold.eot') format('opentype'), 
+         url('../fonts/Nekst-Bold.woff2') format('woff2'), 
+         url('../fonts/Nekst-Bold.woff') format('woff'), 
+         url('../fonts/Nekst-Bold.ttf')  format('truetype');
+         font-weight: 700;
+         font-style: normal;
+}
+@font-face {
     font-family: 'Nekst-SemiBold';
     src: url('../fonts/Nekst-SemiBold.eot') format('opentype'), 
          url('../fonts/Nekst-SemiBold.woff2') format('woff2'), 
@@ -169,15 +187,27 @@ header .wrapper {
 }
 .headerExit:hover {
     transition: all 0.3s;
-    color: #D9552A;
-    background: transparent;
-    border: 1px solid #D9552A;
+    background:#AE4422;
 }
 .headerPay:hover {
     transition: all 0.3s;
-    color: #fff;
-    background: #D9552A;
-    border: 1px solid transparent;
+    color: #AE4422;
+    border: 1px solid #AE4422;
+}
+.formBtn {
+    transition: all 0.3s;
+}
+.promocod {
+    transition: all 0.3s; 
+}
+.promocod:hover {
+    transition: all 0.3s;
+    color: #AE4422;
+    border: 1px solid #AE4422;
+}
+.formBtn:hover {
+    transition: all 0.3s;
+    background:#AE4422;
 }
 .headerBtn {
     display: flex;
@@ -187,7 +217,7 @@ header .wrapper {
     padding: 190px 0 140px 0;
 }
 .credit_online .wrapper h1{
-    font-family: 'Nekst-SemiBold', sans-serif;
+    font-family: 'Nekst-Bold';
     font-size: 56px;
     line-height: 100%;
     text-align: center;
@@ -235,19 +265,44 @@ header .wrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
     width: 100%;
     margin-bottom: 20px;
+}
+.maxLenghtContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.maxLenght {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 .sliderContainerText > p {
     font-size: 14px;
     line-height: 16px;
     color: rgba(86, 86, 86, 0.7);
 }
-.sliderContainerText > div {
+.maxLenghtContent > div {
     font-family: 'Gilroy-Bold';
     font-size: 18px;
     line-height: 22px;
     color: #353535;
+}
+.maxLenghtContent {
+    font-family: 'Gilroy-Bold';
+    font-size: 18px;
+    line-height: 22px;
+    color: #353535;
+    margin-bottom: 9px;
+}
+.maxLenght p {
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(86, 86, 86, 0.7);
 }
 .sliderMoney > input,
 .sliderDate > input {
@@ -536,12 +591,11 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .weOfferTop > button:hover {
     transition: all 0.3s;
-    color: #fff;
-    background: #D9552A;
-    border: 1px solid transparent;
+    color: #AE4422;
+    border: 1px solid #AE4422;
 }
 .weOfferTop > button:hover svg path {
-    fill: #fff;
+    fill: #AE4422;
 }
 .weOfferContent {
     display: flex;
@@ -679,7 +733,7 @@ input[type="range"]:active::-webkit-slider-thumb{
     padding: 140px 0;
 }
 .whatIsNeeded .wrapper h2{
-    font-family: 'Nekst-SemiBold';
+    font-family: 'Nekst-Black', sans-serif;
     font-size: 44px;
     line-height: 53px;
     color: #FFFFFF;
@@ -689,7 +743,7 @@ input[type="range"]:active::-webkit-slider-thumb{
 .whatIsNeededIcons {
     display: flex;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-bottom: 30px;
 }
 .whatIsNeededIcons img {
@@ -800,9 +854,8 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .tab_itemBtn:hover {
     transition: all 0.3s;
-    color: #D9552A;
-    background: transparent;
-    border: 1px solid #D9552A;
+    color: #FFFFFF;
+    background: #AE4422;
 }
 .information .wrapper h2{
     font-family: 'Nekst-SemiBold';
@@ -837,9 +890,8 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .information .wrapper button:hover {
     transition: all 0.3s;
-    color: #D9552A;
-    background: transparent;
-    border: 1px solid #D9552A;
+    background: #AE4422;
+    color: #FFFFFF;
 }
 .information {
     padding-bottom: 90px;
@@ -894,9 +946,8 @@ input[type="range"]:active::-webkit-slider-thumb{
 }
 .partner .wrapper a:hover {
     transition: all 0.3s;
-    color: #fff;
-    background: #D9552A;
-    border: 1px solid transparent;
+    color: #AE4422;
+    border: 1px solid #AE4422;
 }
 .touch {
     background: #EDEDF1;
@@ -1058,7 +1109,7 @@ footer {
     display: flex;
 }
 .payOffBannerLeft h1 {
-    font-family: 'Nekst-SemiBold';
+    font-family: 'Nekst-Black';
     font-size: 56px;
     line-height: 100%;
     color: #FFFFFF;
@@ -1452,7 +1503,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Gilroy-Semibold';
+    font-family: 'Gilroy-Bold';
     font-size: 20px;
     line-height: 100%;
     color: #FFFFFF;
@@ -1779,9 +1830,26 @@ footer {
 }
 .promotionsText a:hover {
     transition: all 0.3s;
-    color: #D9552A;
-    background: transparent;
-    border: 1px solid #D9552A;
+    color: #FFF;
+    background: #AE4422;
+}
+.formPopapSubmit {
+    transition: all 0.3s; 
+}
+.formPopapSubmit:hover {
+    transition: all 0.3s; 
+    color: #FFF !important;
+    background: #AE4422 !important;
+}
+.newShortItem button, 
+.longCreditItem button {
+    transition: all 0.3s;
+}
+.newShortItem button:hover, 
+.longCreditItem button:hover {
+    transition: all 0.3s;
+    color: #FFF;
+    background: #AE4422;
 }
 .promotionsSection {
     margin-bottom: 30px;
@@ -1835,7 +1903,9 @@ footer {
     width: 40px;
     height: 40px;
 }
-
+.btnMobile {
+    display: none;
+}
 
 
 
@@ -2195,6 +2265,12 @@ footer {
     .helpContainer {
         margin-top: -58px;
     }
+    .bannerDesctop {
+        display: none;
+    }
+    .credit_onlineContainer {
+        justify-content: center;
+    }
 }
 
 
@@ -2384,6 +2460,18 @@ footer {
     .partnerPageSection {
         width: 48%;
     }
+    .navigationFooter li:nth-of-type(1) {
+        order: 1;
+    }
+    .navigationFooter li:nth-of-type(2) {
+        order: 3;
+    }
+    .navigationFooter li:nth-of-type(3) {
+        order: 2;
+    }
+    .navigationFooter li:nth-of-type(4) {
+        order: 4;
+    }
 }
 @media (max-width: 576px) {
     .formContainer {
@@ -2392,11 +2480,49 @@ footer {
     .partnerWrapper .wrapper .payOffBannerLeft {
         width: 100%;
     }
+    .partnerSliderItem {
+        height: 66px;
+        border-radius: 15px;
+    }
+    .promotionsText a {
+        margin: 0 auto;
+    }
     .menuBtn button {
         width: 100%;
     }
+    .tab_item > button {
+        display: none;
+    }
+    .btnMobile {
+        display: block;
+        margin: 20px auto 80px auto;
+        width: 270px;
+        height: 52px;
+        background: #D9552A;
+        border-radius: 30px;
+        font-family: 'Gilroy-Semibold';
+        font-size: 16px;
+        line-height: 160%;
+        color: #FFFFFF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        border: 1px solid transparent;
+        transition: all 0.3;
+    }
+    .btnMobile:hover {
+        transition: all 0.3;
+        background: #AE4422; 
+    }
+    .mar {
+        margin-right: 0;
+    }
+    .mar img {
+        max-width: 100%;
+    }
     .headerBtn {
-        width: 100%;
+        width: 75%;
     }
     .menuNavigation li a {
         font-size: 20px;
@@ -2426,7 +2552,7 @@ footer {
         padding: 10px;
     }
     .wrapperNeed .tab_content .tab_item {
-        padding: 30px 16px !important;
+        padding: 30px 16px 10px 16px!important;
     }
     .tab_itemSection img {
         width: 35px !important;
@@ -2702,7 +2828,7 @@ footer {
         margin-bottom: 20px;
     }
     .whatIsNeeded {
-        padding-bottom: 50px;
+        padding-bottom: 0px;
     }
     .information .wrapper h2 {
         text-align: left;
@@ -2838,6 +2964,9 @@ footer {
         min-height: 100%;
     }
     .partnerPageSection img {
+        margin-bottom: 0;
+    }
+    .calcResultCont p:nth-of-type(1) {
         margin-bottom: 0;
     }
 }
